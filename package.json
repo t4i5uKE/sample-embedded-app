@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   "homepage": "https://github.com/t4i5uKE/sample-embedded-app#readme",
   "dependencies": {
     "@shopify/koa-shopify-auth": "^3.2.0",
+    "@shopify/polaris": "^5.13.0",
+    "@zeit/next-css": "^1.0.1",
     "dotenv": "^8.2.0",
     "isomorphic-fetch": "^3.0.0",
     "koa": "^2.13.1",
